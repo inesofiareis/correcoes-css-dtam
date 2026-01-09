@@ -1,0 +1,151 @@
+.mapa {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+.pin {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.pin-img {
+    width: 32px;
+    height: 32px;
+}
+
+#btnAjuda {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+
+#pin1 {
+    left: 78%;
+    top: 70%;
+}
+
+#pin2 {
+    top: 280px;
+    right: 430px;
+}
+
+#pin3 {
+    left: 300px;
+    top: 500px;
+}
+
+.btn {
+    position: fixed;
+}
+
+
+/* Página dos artistas */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px;
+}
+
+.menu ul {
+    display: flex;
+    align-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.artistas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Página do programa */
+
+.programa {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "sidebar conteudo"
+        "footer footer";
+    gap: 10px;
+
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.conteudo {
+    grid-area: conteudo;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+@media screen {
+    body {
+        background-color: aliceblue;
+        margin: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+        .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .programa {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "conteudo"
+            "sidebar"
+            "footer";
+    }
+
+    body {
+        font-size: 10rem;
+    }
+
+}

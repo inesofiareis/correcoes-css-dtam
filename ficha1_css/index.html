@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/exercicio.css" />
+    <title>Ficha de Consolidação</title>
+  </head>
+
+  <body>
+    <header id="top">
+      <h1>Ficha de Consolidação</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#audio">Secção Áudio</a>
+          </li>
+          <li>
+            <a href="#video">Secção Vídeo</a>
+          </li>
+          <li>
+            <a href="#form">Secção Form</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre">
+        <p>
+          Este é o <em>parágrafo</em> da minha
+          <strong>ficha de consolidação</strong>. O simbolo seguinte (&lt;) usei
+          escrevendo uma entidade.
+        </p>
+      </section>
+
+      <section id="galeria">
+        <figure>
+          <img
+            src="./images/image.jpg"
+            alt="The user's favourite game"
+            title="life is strange "
+            width="300"
+          />
+          <figcaption>O meu jogo favorito</figcaption>
+        </figure>
+      </section>
+
+      <section id="media">
+        <div id="audio">
+          <h2>Áudio</h2>
+          <audio controls>
+            <source src="./media/musica.mp3" type="audio/mpeg" />
+          </audio>
+        </div>
+
+        <div id="video">
+          <h2>Vídeo</h2>
+          <video width="320" height="240" controls poster="./images/image.jpg">
+            <source src="./media/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div id="iframe">
+          <h2>Video do Youtube</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rggwKu2-Cy4?si=6P_iewQ9--j0TTTT"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="form">
+        <div>
+          <form action="" method="post">
+            <fieldset>
+              <legend>Formulário de Newsletter</legend>
+              <label for="id-username">Nome de utilizador:</label>
+              <input type="text" name="username" id="id-username" />
+              <label for="id-email">Email:</label>
+              <input type="email" name="email" id="id-email" />
+              <label for="id-textarea">Observações:</label>
+              <textarea name="textarea" id="id-textarea" cols="30" rows="10">
+              </textarea>
+              <input type="submit" id="btnSubmit" value="Submeter" />
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <div id="useful">
+        <ul>
+          <li>
+            <a href="">MDN</a>
+          </li>
+          <li>
+            <a href="">W3C</a>
+          </li>
+          <li>
+            <a href="">VsCode</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <footer>
+      <div id="copy">&copy; Copyright Inês Reis 2025</div>
+      <div id="backtotop">
+        <a href="#top">Voltar ao topo</a>
+      </div>
+    </footer>
+  </body>
+</html>
